@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__icon">
+            <img
+              src="./assets/images/logo.svg"
+              alt="w news logo"
+              class="logo"
+            />
+          </div>
+
+          <button
+            class="nav__btn"
+            id="menu-toggle"
+            aria-label="toggle menu"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <span class="sr-only">Menu</span>
+            <img
+              src="./assets/images/icon-menu.svg"
+              alt="menu icon"
+              class="menu-icon"
+              id="menu-icon"
+            />
+            <img
+              src="./assets/images/icon-menu-close.svg"
+              alt="menu close icon"
+              class="menu-close-icon"
+              id="menu-close-icon"
+            />
+          </button>
+
+          <ul id="menu" class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">New</a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Trending</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Categories</a>
+            </li>
+          </ul>
+          <div class="nav__backdrop"></div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="main">
+          <section class="main__section">
+            <div class="main__image">
+              <picture>
+                <source
+                  media="(min-width: 640px)"
+                  srcset="./assets/images/image-web-3-desktop.jpg"
+                />
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+              </picture>
+            </div>
+
+            <div>
+              <h1 class="main__heading">The Bright Future of Web 3.0?</h1>
+            </div>
+
+            <div>
+              <p class="main__text">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+
+              <a class="btn-primary" href="#">Read more</a>
+            </div>
+          </section>
+
+          <section id="new" class="new__section new">
+            <h2 class="section__heading">New</h2>
+
+            <div>
+              <h3 class="heading">Hydrogen VS Electric Cars</h3>
+              <p class="text">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+
+            <hr class="divider" />
+
+            <div>
+              <h3 class="heading">The Downsides of AI Artistry</h3>
+              <p class="text">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+
+            <hr class="divider" />
+
+            <div>
+              <h3 class="heading">Is VC Funding Drying Up?</h3>
+              <p class="text">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </section>
+
+          <section id="popular" class="article__section">
+            <div class="article">
+              <div class="article__image">
+                <img
+                  src="./assets/images/image-retro-pcs.jpg"
+                  alt="retro desktop computer"
+                />
+              </div>
+              <div class="article__body">
+                <h4 class="article__number">01</h4>
+                <h5 class="article__heading">Reviving Retro PCs</h5>
+                <p class="article__text">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </div>
+
+            <div class="article">
+              <div class="article__image">
+                <img
+                  src="./assets/images/image-top-laptops.jpg"
+                  alt="gaming laptops"
+                />
+              </div>
+              <div class="article__body">
+                <h4 class="article__number">02</h4>
+                <h5 class="article__heading">Top 10 Laptops of 2022</h5>
+                <p class="article__text">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </div>
+
+            <div class="article">
+              <div class="article__image">
+                <img
+                  src="./assets/images/image-gaming-growth.jpg"
+                  alt="hand placed under a playstation 4 pad in the air"
+                />
+              </div>
+              <div class="article__body">
+                <h4 class="article__number">03</h4>
+                <h5 class="article__heading">The Growth of Gaming</h5>
+                <p class="article__text">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor</a
+          >. Coded by
+          <a href="https://wwww.samueladu.dev" target="_blank">Samuel Adu</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
